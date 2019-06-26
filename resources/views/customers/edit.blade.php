@@ -8,7 +8,7 @@
 -->
 
 
-@extends('base')
+@extends('layouts.app')
 @section('content')
 
     <h1 class="text-black-50">Edit Customer ( <span class="text-danger">{{ $customer->name }}</span> ) :</h1>

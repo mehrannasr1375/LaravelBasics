@@ -8,7 +8,7 @@
 -->
 
 
-@extends('base')
+@extends('layouts.app')
 @section('content')
 
     <h1 class="text-black-50">Create New Customer:</h1>
