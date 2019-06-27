@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow with-3d-shadow">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{ config('app.name', 'Laravel') }}
@@ -22,8 +23,10 @@
                     </li>
                 </ul>
 
+
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
+                    
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
@@ -35,22 +38,22 @@
                             </li>
                         @endif
                     @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
+                        <li class="nav-item">
+                            <div class="btn-group">
+                                    <a id="" class="btn btn-outline-success btn-sm" href="#" role="button" aria-haspopup="true" aria-expanded="false" v-pre>
+                                            {{ Auth::user()->name }} <span class="caret"></span>
+                                        </a>
+                                        
+                                        <a class="btn btn-outline-danger btn-sm" href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                                        </a>
                             </div>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                            </form>
                         </li>
                     @endguest
                 </ul>

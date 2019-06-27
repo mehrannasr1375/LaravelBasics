@@ -1,6 +1,7 @@
 <?php
 
 Route::view('/', 'home');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::view('/about', 'about');
 
 
@@ -13,10 +14,4 @@ Route::get('/customers/{customer}/edit', 'CustomersController@edit');
 Route::delete('/customers/{customer}', 'CustomersController@destroy');
 
 
-//Route::resource('customers', 'CustomersController');
-
-
-
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

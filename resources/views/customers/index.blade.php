@@ -32,15 +32,20 @@
                             <td>{{ $customer->registered }}</td>
                             <td>{{ $customer->company->name }}</td>
                             <td>{{ $customer->created_at }}</td>
-                            <td>
-                                <a class="btn btn-info btn-sm" href="/customers/{{ $customer->id }}">Details
-                                <a class="btn btn-success btn-sm" href="/customers/{{ $customer->id }}/edit">Edit</a>
+                            <td class="btn-group">
+                                <a class="btn btn-sm btn-info text-light" href="/customers/{{ $customer->id }}">Details
+                                <a class="btn btn-sm btn-success" href="/customers/{{ $customer->id }}/edit">Edit</a>
+                                <a class="btn btn-sm btn-danger" href="#" onclick="
+                                    event.preventDefault();
+                                    document.getElementById('btn-delete-registered-customer').click();
+                                ">Delete</a>  
                                 <form action="/customers/{{ $customer->id }}" method="POST">
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                    <button type="submit" id="btn-delete-registered-customer" style="display:none;" >Delete</button>
                                     @csrf
-                                </form>    
+                                </form>                         
                             </td>
+                            
                     </tr>
                 @endforeach
             </table>
@@ -70,15 +75,22 @@
                             <td>{{ $customer->registered }}</td>
                             <td>{{ $customer->company->name }}</td>
                             <td>{{ $customer->created_at }}</td>
-                            <td>
-                                <a class="btn btn-info btn-sm" href="/customers/{{ $customer->id }}">Details
-                                <a class="btn btn-success btn-sm" href="/customers/{{ $customer->id }}/edit">Edit</a>
+                            <td class="btn-group">
+                                <a class="btn btn-sm btn-info text-light" href="/customers/{{ $customer->id }}">Details
+                                <a class="btn btn-sm btn-success" href="/customers/{{ $customer->id }}/edit">Edit</a>
+                                <a class="btn btn-sm btn-danger" href="#" onclick="
+                                    event.preventDefault();
+                                    document.getElementById('btn-delete-unregistered-customer').click();
+                                ">Delete</a> 
+
                                 <form action="/customers/{{ $customer->id }}" method="POST">
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                    <button id="btn-delete-unregistered-customer" style="display:none;" type="submit" style="" class="btn btn-sm btn-danger">Delete</button>
                                     @csrf
                                 </form>
-                            </td>                    
+
+                            </td> 
+                                            
                         </tr>
                 @endforeach
             </table>

@@ -8,6 +8,11 @@ use App\Company;
 
 class CustomersController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except('index');
+    }
     
     public function index()
     {
@@ -66,7 +71,7 @@ class CustomersController extends Controller
 
     
     public function destroy(Customer $customer)
-    {
+    {   
         $customer->delete();
         return redirect('/customers');
     }
