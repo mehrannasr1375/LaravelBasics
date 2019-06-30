@@ -35,6 +35,10 @@
             </div>
         </main>
 
+{{--        <div class="p-5">--}}
+{{--            <Button_1 text="Click on me!" type="submit"></Button_1>--}}
+{{--        </div>--}}
+
     </div>
 
     <!-- scripts -->

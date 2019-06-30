@@ -20,7 +20,8 @@
 
             <!-- Form -->
             <form action="/customers/{{ $customer->id }}" method="POST" class="my-4 bg-light p-5 rounded">
-                
+{{--            <form action="{{ route('customers.edit', ['customer' => $customer]) }}" method="POST" class="my-4 bg-light p-5 rounded">--}}
+
                 @include('customers.form')
 
                 @method('PATCH')

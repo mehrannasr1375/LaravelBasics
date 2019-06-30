@@ -32,20 +32,20 @@
                             <td>{{ $customer->registered }}</td>
                             <td>{{ $customer->company->name }}</td>
                             <td>{{ $customer->created_at }}</td>
+
                             <td class="btn-group">
                                 <a class="btn btn-sm btn-info text-light" href="/customers/{{ $customer->id }}">Details
                                 <a class="btn btn-sm btn-success" href="/customers/{{ $customer->id }}/edit">Edit</a>
                                 <a class="btn btn-sm btn-danger" href="#" onclick="
                                     event.preventDefault();
                                     document.getElementById('btn-delete-registered-customer').click();
-                                ">Delete</a>  
+                                ">Delete</a>
                                 <form action="/customers/{{ $customer->id }}" method="POST">
                                     @method('DELETE')
                                     <button type="submit" id="btn-delete-registered-customer" style="display:none;" >Delete</button>
                                     @csrf
-                                </form>                         
+                                </form>
                             </td>
-                            
                     </tr>
                 @endforeach
             </table>
@@ -105,7 +105,7 @@
     
     </div>
 
-    <a href="/customers/create" class="btn btn-info">Create New Customer</a>
+    <a href="/customers/create" class="btn btn-outline-info">Create New Customer</a>
 
 @endsection
 

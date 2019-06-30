@@ -16,14 +16,14 @@
     <br>
 
     <div class="row">
-        <div class="col">
+        <div class="col mb-5">
 
             <!-- Form -->
-            <form action="/customers" method="POST" class="my-4 bg-light p-5 rounded">
+            <form action="{{ route('customers.store') }}" method="POST" class="bg-light p-5 rounded shadow">
                 
                 @include('customers.form')
                 
-                <button type="submit" class="btn btn-outline-success my-3">Save</button>
+                <button type="submit" class="btn btn-success my-3">Save</button>
             
             </form>
 

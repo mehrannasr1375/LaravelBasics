@@ -13,7 +13,8 @@ class CustomersController extends Controller
     {
         $this->middleware('auth')->except('index');
     }
-    
+
+
     public function index()
     {
         $registered_customers = Customer::registered()->get();

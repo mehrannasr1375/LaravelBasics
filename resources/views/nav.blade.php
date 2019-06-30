@@ -21,6 +21,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/about">about</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">contact</a>
+                    </li>
                 </ul>
 
 
@@ -40,11 +43,11 @@
                     @else
                         <li class="nav-item">
                             <div class="btn-group">
-                                    <a id="" class="btn btn-outline-success btn-sm" href="#" role="button" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <a id="" class="btn btn-secondary btn-sm" href="#" role="button" aria-haspopup="true" aria-expanded="false" v-pre>
                                             {{ Auth::user()->name }} <span class="caret"></span>
                                         </a>
                                         
-                                        <a class="btn btn-outline-danger btn-sm" href="{{ route('logout') }}"
+                                        <a class="btn btn-secondary btn-sm" href="{{ route('logout') }}"
                                                onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
                                                 {{ __('Logout') }}
