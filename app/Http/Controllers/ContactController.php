@@ -22,9 +22,8 @@ class ContactController extends Controller
             'email' => 'required|email',
             'message' => 'required',
         ]);
-
-        Mail::to('test@test.com')->send(new ContactFormMail());
-
-        return redirect('/contact')->with('success','The Email has been sent successfully!');
+        Mail::to('test@test.com')->send(new ContactFormMail($data));
+        session()->flash('success', 'The Email has been sent successfully!');
+        return redirect('contact');
     }
 }

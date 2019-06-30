@@ -11,17 +11,15 @@ class ContactFormMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $data;
 
-    public function __construct()
+
+    public function __construct($data)
     {
-        //
+        $this->data = $data;
     }
 
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
+
     public function build()
     {
         return $this->markdown('email.contact.contact-us-form');

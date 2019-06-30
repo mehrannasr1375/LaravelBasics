@@ -9,18 +9,9 @@
         <div class="col">
 
 
-            @if (session()->has('success'))
-                <div class="alert alert-success" >
-                    <strong>Success</strong>
-                    {{ session()->get('success') }}
-                </div>
-            @endif
-
-
+            <!-- Show form if we don`t have message -->
             @if ( ! session()->has('success') )
-
-                <!-- Form -->
-                    <form action="{{ route('contact.store') }}" method="POST" class="bg-light p-5 rounded shadow mb-5">
+                <form action="{{ route('contact.store') }}" method="POST" class="bg-light p-5 rounded shadow mb-5">
 
 
                         <!-- Full Name -->
@@ -55,7 +46,17 @@
                         @csrf
                     </form>
 
+
+                <!-- Show Alert if we have message -->
+                @else
+                    <div class="alert alert-success" >
+                        <strong>Success </strong>
+                        {{ session()->get('success') }}
+                    </div>
+
             @endif
+
+
 
         </div>
     </div>
