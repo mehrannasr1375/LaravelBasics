@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6baa7e0-8a87-494e-bfd2-37c82a16c3e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/ContactFormMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ContactFormMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/email/contact/contact-us-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/contact/contact-us-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="555">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#40#69#0#PHP" expanded="true" />
               </folding>
@@ -47,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/contact/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="384">
+              <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
               <folding>
                 <element signature="e#495#1951#0#HTML" />
               </folding>
@@ -285,12 +282,12 @@
       <workItem from="1561801057524" duration="914000" />
       <workItem from="1561831529073" duration="6161000" />
       <workItem from="1561911900515" duration="774000" />
-      <workItem from="1561916501966" duration="5034000" />
+      <workItem from="1561916501966" duration="5358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41539000" />
+    <option name="totallyTimeSpent" value="41863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -306,7 +303,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49931413" visible="true" weight="0.20225695" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49931413" visible="true" weight="0.20225695" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.3288948" />
@@ -319,7 +316,7 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32921812" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.5006859" weight="0.252996" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.5006859" weight="0.6671105" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -563,22 +560,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/contact/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="384">
+          <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
           <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
+            <element signature="e#495#1951#0#HTML" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/contact/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="555">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#495#1951#0#HTML" />
+            <element signature="e#40#69#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
