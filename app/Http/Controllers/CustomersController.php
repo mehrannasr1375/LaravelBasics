@@ -17,8 +17,10 @@ class CustomersController extends Controller
 
     public function index()
     {
-        $registered_customers = Customer::registered()->get();
-        $unregistered_customers = Customer::unregistered()->get();
+        //$registered_customers = Customer::registered()->get();
+        ////$unregistered_customers = Customer::unregistered()->get();
+        $registered_customers = Customer::registered()->paginate(6);
+        $unregistered_customers = Customer::unregistered()->paginate(6);
         return view('customers.index', compact('registered_customers','unregistered_customers'));
     }
 

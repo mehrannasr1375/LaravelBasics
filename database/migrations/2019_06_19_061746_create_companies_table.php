@@ -7,11 +7,7 @@ use app\Company;
 
 class CreateCompaniesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('companies', function (Blueprint $table) {

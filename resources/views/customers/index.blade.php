@@ -32,7 +32,6 @@
                             <td>{{ $customer->registered }}</td>
                             <td>{{ $customer->company->name }}</td>
                             <td>{{ $customer->created_at }}</td>
-
                             <td class="btn-group">
                                 <a class="btn btn-sm btn-info text-light" href="/customers/{{ $customer->id }}">Details
                                 <a class="btn btn-sm btn-success" href="/customers/{{ $customer->id }}/edit">Edit</a>
@@ -49,6 +48,9 @@
                     </tr>
                 @endforeach
             </table>
+            <div class="d-flex justify-content-center">
+                {{ $registered_customers->links() }}
+            </div>
         </div>
 
 
@@ -94,10 +96,10 @@
                         </tr>
                 @endforeach
             </table>
+            <div class="d-flex justify-content-center">
+                {{ $unregistered_customers->links() }}
+            </div>
         </div>
-
-
-
 
 
 
